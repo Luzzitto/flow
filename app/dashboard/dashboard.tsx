@@ -1,7 +1,11 @@
 import React from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+// import { auth } from "@/auth";
+// import { redirect } from "next/navigation";
 
 const MainDashboardContent = () => {
+  // const session = await auth();
+  // if (!session) redirect("/signin");
   return (
     <div className="min-h-screen flex flex-1 flex-col gap-4 p-4">
       <div className="grid auto-rows-min gap-4 md:grid-cols-4">

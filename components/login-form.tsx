@@ -29,8 +29,8 @@ const LoginForm = ({ className, ...props }: React.ComponentProps<"div">) => {
                 key={provider.id}
                 action={async () => {
                   "use server";
+                  await signIn(provider.id, { redirectTo: "/dashboard" });
                   try {
-                    await signIn(provider.id, { redirectTo: "/dashboard" });
                   } catch (error) {
                     if (error instanceof AuthError) {
                       return redirect("/");

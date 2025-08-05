@@ -1,4 +1,4 @@
-"use client";
+// "use client";
 
 import DashboardSidebar from "@/components/dashboard/app-sidebar";
 import {
